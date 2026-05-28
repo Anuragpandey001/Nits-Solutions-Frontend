@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
+
 import api from "../api/axios-Instance";
+import useAuth from "../hooks/useAuth";
 
 const InputField = ({ label, type, placeholder, value, onChange, required }) => (
     <div className="flex flex-col gap-1.5">

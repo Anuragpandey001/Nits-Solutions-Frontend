@@ -9,6 +9,7 @@ import Dashboard from "./pages/Dashboard";
 import PrivateRoute from "./components/PrivateRoute";
 import Auth from "./pages/Auth";
 
+
 function App() {
   return (
     <Routes>

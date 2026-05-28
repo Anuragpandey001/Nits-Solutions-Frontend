@@ -183,8 +183,8 @@ const Dashboard = () => {
                         <button
                             onClick={() => { setShowForm(!showForm); setError(""); }}
                             className={`flex items-center gap-2 text-sm font-semibold px-5 py-2.5 rounded-xl transition-all duration-200 shadow-lg self-start sm:self-auto active:scale-[0.98] ${showForm
-                                    ? "bg-slate-100 text-slate-600 hover:bg-slate-200 shadow-slate-100"
-                                    : "bg-indigo-600 text-white hover:bg-indigo-700 shadow-indigo-200"
+                                ? "bg-slate-100 text-slate-600 hover:bg-slate-200 shadow-slate-100"
+                                : "bg-indigo-600 text-white hover:bg-indigo-700 shadow-indigo-200"
                                 }`}
                         >
                             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
