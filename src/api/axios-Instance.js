@@ -34,11 +34,18 @@ api.interceptors.response.use(
         const originalRequest =
             error.config;
 
-        // Access token expired
+        // Skip refresh token logic for auth APIs
+        const isAuthRoute =
+            originalRequest.url.includes(
+                "/"
+            )
+
+        // Only refresh for protected APIs
         if (
             error.response?.status ===
             401 &&
-            !originalRequest._retry
+            !originalRequest._retry &&
+            !isAuthRoute
         ) {
             originalRequest._retry =
                 true;
