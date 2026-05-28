@@ -383,7 +383,7 @@ const Dashboard = () => {
                                             ) : (
                                                 <button
                                                     onClick={() => setDeleteConfirmId(item._id)}
-                                                    className="opacity-0 group-hover:opacity-100 p-1.5 rounded-lg text-slate-300 hover:text-red-500 hover:bg-red-50 transition-all duration-200"
+                                                    className=" p-1.5 rounded-lg text-slate-300 hover:text-red-500 hover:bg-red-50 transition-all duration-200"
                                                     title="Delete note"
                                                 >
                                                     <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
